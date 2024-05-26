@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+  
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+.text-container {
+  background-image: url("../Assets/mile1-assets/home-banner.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+  
+  .custom-button {
+    background-color:#FDC913;
+    width: 10rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-family: Barlow ;
+    box-shadow: 0px 5px 10px ;
+    padding: 1rem 1rem;
+  }
+  .custom-button:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 0px 15px 25px -5px ;
+    
+  }
+
+.firsat {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  color: #fdc913;
+}  
+
+.banner-text {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}  
+
+.reklamlar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 6rem 0;
+  gap: 1rem;
+  align-items: stretch;
+  font-family: "Roboto Condensed";
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: stretch;
+  }  
+}  
+
+.grup1 {
+  
+  background-image: url("../../Assets/mile2-aseets/cta/kart-1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1;
+  @media (max-width: 480px) {
+    width: 100%;
+  }  
+}  
+
+.grup2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 1rem;
+}  
+
+.hackatlon-burger {
+  background-image: url("../../Assets/mile2-aseets/cta/kart-2.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1;
+  min-height: 150px;
+}  
+
+.kurye {
+  background-image: url("../../Assets/mile2-aseets/cta/kart-3.png");
+  background-position: center;
+  background-size: cover;
+}  
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}  
+.orta-yazi {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  font-family: "Roboto Condensed";
+}  
+/* const SectionBSpan = styled.span`
+  font-size: 1.7rem;
+  font-weight: bold;
+`; */  
+
+.categories-list {
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+  list-style-type: none;
+   @media (max-width: 480px) {
+    flex-wrap: wrap; 
+    flex-shrink: 2;
+  }  
+   
+  }
+  .categories-list li {
+  margin-right: 0%;  
+  display: flex;
+  align-items: center;
+  font-family: Barlow;
+  }
+  .categories-list li img {
+  margin-right: 1%;  
+  }
+
+
+
+
+
+.bestfood-list {
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+  list-style-type: none;
+   @media (max-width: 480px) {
+    flex-wrap: wrap; 
+    flex-shrink: 2;
+  }  
+   
+}  
+.bestfood-list li {
+  margin-right: 0%;  
+  display: flex;
+  align-items: center;
+  font-family: Barlow;
+}  
+.bestfood-list li img {
+  margin-right: 1%; 
+}  
+
+.pizza-turleri {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.foods {
+  width: 18rem;
+  margin: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 1.5rem;
+}
+.food-img {
+  width: 100%;
+  height: auto;
+}
+.card-p-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.card-price {
+  padding: 0.5rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.card-ps {
+  padding: 0.5rem;
+  color: #5f5f5f;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BURADAN SONRASI VARDI */
+/* .banner-container {
+  background-color: #FAF7F2;
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.banner-img {
+  max-width: 100%;
+      display: flex;
+      overflow-x: hidden;
+      gap: 0px;
+      position: relative;
+      margin-top: -40px;
+      background-image: url("../Assets/mile1-assets/home-banner.png");
+      background-position: center;
+      background-size: cover;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+      text-align: center;
+}
+
+
+.text-container {
+  
+  position :absolute;
+  top:17%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.banner-text {
+  color: #FFFFFF;
+  font-family: Roboto Condensed;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 0px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+hr {
+  width: 40%;
+  border-style: solid;
+    color: white;
+    border-width: 1px;
+    
+  }
+  .siparis-box {
+    border: #FFFFFF;
+  }
+.firsat {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDC913;
+  line-height: 0px
+}
+  
+  
+  
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BURADAN SONRASI YORUMDAYDI************* */
+
+/*
+.reklamlar {
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.ozel-lezzetus{
+  position: relative;
+}
+.ozel-lezzetus img {
+  position: relative;
+  height: 70%;
+  display: flex;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.child-ozel-lezzetus {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+
+
+}
+.child-ozel-lezzetus h1,
+.child-ozel-lezzetus h6,
+.child-ozel-lezzetus button {
+  display: block;
+  margin: 10px 0; 
+}
+*/
+
+
+
+
+
+/* BURADAN SONRASI VARDI*************************** */
+/* .pizza-turleri {
+  display: flex;
+  justify-content: center;
+}
+.orta-yazi {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#grup2 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.reklamlar {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.ozel-lezzetus,
+.hackatlon-burger,
+.kurye {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+}
+
+.ozel-lezzetus img,
+.hackatlon-burger img,
+.kurye img {
+  width: 100%;
+  height: auto;
+}
+
+.child-ozel-lezzetus {
+  position: absolute;
+  top: 30%;
+  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: flex-start;
+  z-index: 1;
+}
+
+.child-ozel-lezzetus h1,
+.child-ozel-lezzetus h6,
+.child-ozel-lezzetus button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ */
