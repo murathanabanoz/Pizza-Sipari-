@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap");
 
 /* .done-card {
    background-color: rgba(206, 40, 41, 1);
@@ -108,125 +108,127 @@
       margin-top: 5px;
     }
   } */
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.done-card {
+  background-color: rgba(206, 40, 41, 1);
+  border: 1px solid black;
+  width: 100%;
+  height: 200%;
+  margin: 0 0 -150px 0;
+  padding: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Barlow;
+  color: #ffffff;
+}
+
+.lezzet {
+  font-family: "Satisfy", cursive;
+  color: #fdc913;
+  margin-bottom: 0;
+}
+
+.done-text {
+  font-family: Roboto Condensed;
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 300;
+  gap: 0;
+  margin-top: 0;
+  letter-spacing: 0.09375rem;
+  margin-bottom: 0.625rem;
+}
+
+.name {
+  font-size: 1.375rem;
+  line-height: 1.84rem;
+  margin-bottom: 0.3125rem;
+}
+
+.hr {
+  background-color: #ffffff;
+  height: 1px;
+  width: 30%;
+}
+.siparis-box {
+  border: 1px solid white;
+  width: 18rem;
+  height: 11.9375rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.siparis-bilgi {
+  width: 12.5625rem;
+  height: 9.5625rem;
+}
+
+@media (max-width: 768px) {
   .done-card {
-    background-color: rgba(206, 40, 41, 1);
-    width: 100%;
-    height: 120%; 
-    margin: 0; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Barlow;
-    color: #FFFFFF;
+    padding: 0.9375rem;
   }
-  
+
   .lezzet {
-    font-family: "Satisfy", cursive;
-    color: #FDC913;
-    margin-bottom: 0;
+    font-size: 1rem;
   }
-  
+
   .done-text {
-    font-family: Roboto Condensed;
-    color: #FFFFFF;
-    font-size: 4rem;
-    font-weight: 300;
-    gap: 0;
-    margin-top: 0;
-    letter-spacing: 0.09375rem; 
-    margin-bottom: 0.625rem; 
+    font-size: 3rem;
   }
-  
   .name {
-    font-size: 1.375rem; 
-    line-height: 1.84rem; 
-    margin-bottom: 0.3125rem; 
+    font-size: 1.2rem;
   }
-  
-  .hr {
-    background-color: #FFFFFF;
-    height: 1px;
-    width: 30%;
+
+  .siparis-bilgi h5,
+  .siparis-box h5 {
+    font-size: 1rem;
   }
+}
+
+@media (max-width: 480px) {
+  .done-card {
+    padding: 0.625rem;
+  }
+
+  .lezzet {
+    font-size: 1.2rem;
+  }
+
+  .done-text {
+    font-size: 3rem;
+  }
+  .name {
+    font-size: 1rem;
+  }
+
+  .siparis-bilgi h5,
+  .siparis-box h5 {
+    font-size: 0.9rem;
+  }
+
   .siparis-box {
-    border: 1px solid white;
-    width: 18rem; 
-    height: 11.9375rem; 
-    display: flex;
     flex-direction: column;
-    margin-top: 1.25rem; 
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3rem;
+    align-items: flex-start;
   }
-  
-  .siparis-bilgi {
-    width: 12.5625rem; 
-    height: 9.5625rem; 
+
+  .siparis-box span {
+    margin-top: 0.3125rem;
   }
-  
-  @media (max-width: 768px) {
-    .done-card {
-      padding: 0.9375rem; 
-    }
-  
-    .lezzet {
-      font-size: 1rem;
-    }
-    
-    .done-text {
-      font-size: 3rem;
-    }
-    .name {
-      font-size: 1.2rem;
-    }
-  
-    .siparis-bilgi h5,
-    .siparis-box h5 {
-      font-size: 1rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .done-card {
-      padding: 0.625rem;
-    }
-  
-    .lezzet {
-      font-size: 1.2rem;
-    }
-    
-    .done-text {
-      font-size: 3rem;
-    }
-    .name {
-      font-size: 1rem;
-    }
-  
-    .siparis-bilgi h5,
-    .siparis-box h5 {
-      font-size: 0.9rem;
-    }
-  
-    .siparis-box {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .siparis-box span {
-      margin-top: 0.3125rem;
-    }
-  }
+}
