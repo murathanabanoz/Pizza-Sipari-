@@ -21,8 +21,6 @@ const Home = () => {
   };
   return (
     <div className="banner-container">
-      {/* <img src={homeBanner} alt="pizza" className="banner-img" /> */}
-
       <div className="text-container">
         <h3 className="firsat">fırsatı kaçırma</h3>
         <h1 className="banner-text">KOD ACIKTIRIR</h1>
@@ -54,7 +52,7 @@ const Home = () => {
         </li>
         <li>
           <img src={svg6} />
-          Gazlı İçecek
+          <span> Gazlı İçecek</span>
         </li>
       </ul>
       <div className="reklamlar">
@@ -82,7 +80,7 @@ const Home = () => {
               <p>
                 <span style={{ color: "red" }}>Çooooook</span> hızlı npm kurye
               </p>
-              <button>Sipariş Ver</button>
+              <button className="kurye-btn">Sipariş Ver</button>
             </div>
           </div>
         </div>
