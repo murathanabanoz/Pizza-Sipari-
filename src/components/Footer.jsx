@@ -9,12 +9,14 @@ import insta6 from "../../Assets/mile2-aseets/footer/insta/li-5.png";
 
 const Footer = () => {
   const instas = [insta1, insta2, insta3, insta4, insta5, insta6];
+
   return (
     <div className="footer-container">
       <div className="group-1">
         <img
           src="../../Assets/mile2-aseets/footer/icons/logo-footer.svg"
           alt="logofooter"
+          className="footer-yemekteyiz-logo"
         />
         <div className="icons">
           <img

@@ -1,142 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap");
-/* .form-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 500px;
-  margin-top: -60px; 
-  
-}
- .food-card {
-  display:flex;
-  flex-direction: column;  
-  justify-content: center;
-  align-items: center;
-} 
 
-
-.box {
-  max-width: 500px;
-  font-family: Barlow; 
-}
-
-.pizza-bilgi {
-  text-align: flex-start;
-  align-items: center;
-  
-}
-/* ARTTIR-EKSİLT BUTONU */
-
-/* .art-eksil {
-  background-color: rgba(250, 247, 242, 1);
-  border: none;
-  padding: 10px ;
-  margin-top: 20px;
-} 
-
-
-.art-eksil:hover {
-  cursor: pointer;
-  
-}
-
-.count { */
-/* padding: 10px  ; */
-/* background-color: rgba(250, 247, 242, 1);
-  ;
- 
-} 
-.bottom-container {
-  display: flex;
-  
-}
-.boyut-hamur {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-} 
-.boyut-hamur h3{
-  width: 146px;
-  height: 25px;
-} */
-
-/* CHECKBOX KISMISIIIII*/
-
-/* .checkbox-container {   
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.checkbox-item{
-  flex: 0 1 calc(40% - 10vh);
-  box-sizing: border-box;
-  font-size:16px;
-   line-height:28.8px;
-   display: flex;
-   flex-wrap: wrap;
-}
-.checkbox-item:hover{
- cursor: pointer;
-} 
-.bottom-container{
-  display: flex;
-  justify-content: space-between;
-}
-.pizza-description {
-  color:rgba(95, 95, 95, 1);
-  
-}
-.pizza-name {
-  color: rgba(41, 41, 41, 1);
-  font-size: 22px;
-}
-.pizza-price {
-  color: rgba(41, 41, 41, 1);
-  font-size: 28px;
-}
-input[type="radio"] {
-  display: none;
-
-}
-
-.radio-group {
-  display: flex;
-  justify-content:center ;
-  margin: 100px 0px 10px 0px;
-  
- 
-  
-}
-
-.radio-label {
-  margin: 10px;
-  padding: 10px ;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #f0f0f0;
-  text-align: center;
-  line-height: 50px;
-  cursor: pointer;
- 
-
-}
-.dropbox {
-  background-color:rgba(250, 247, 242, 1);
-  padding: 20px 30px 20px 2px;
-  border: none;
-  border-radius: 10px;
-}
-.textarea {
-  width: 100%;
-  box-sizing: border-box;
-  resize: vertical;
-  background-color:rgba(250, 247, 242, 1);
-  padding: 10px;
- 
-} 
-
- */
 .colored-div {
   width: 100%;
   height: 100%;
@@ -147,6 +10,7 @@ input[type="radio"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .box {
@@ -155,8 +19,7 @@ input[type="radio"] {
 }
 .form-banner {
   display: flex;
-  /* align-items: center;
-   justify-content: center; */
+
   max-width: 90%;
   margin-top: -3rem;
 }
@@ -170,7 +33,6 @@ input[type="radio"] {
   justify-content: space-between;
 }
 
-/* ARTTIR-EKSİLT BUTONU */
 .art-eksil {
   background-color: rgba(250, 247, 242, 1);
   border: none;
@@ -203,7 +65,10 @@ input[type="radio"] {
   flex-wrap: wrap;
 }
 
-/* CHECKBOX KISMI */
+.değerlendirme-icon {
+  color: yellowgreen;
+}
+
 .checkbox-container {
   display: flex;
   flex-wrap: wrap;
@@ -219,8 +84,6 @@ input[type="radio"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  /* background-color: rgba(250, 247, 242, 1); */
 }
 
 .checkbox-item:hover {
@@ -285,7 +148,7 @@ input[type="radio"] {
 
 .pizza-price {
   color: rgba(41, 41, 41, 1);
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 input[type="radio"] {
@@ -319,7 +182,7 @@ input[type="radio"] {
 }
 
 .radio-label.selected {
-  background-color: rgba(255, 238, 204, 1);
+  background-color: rgb(247, 247, 26);
 }
 
 .dropbox {
@@ -351,66 +214,3 @@ input[type="radio"] {
   cursor: pointer;
   margin-bottom: 0rem;
 }
-
-/*
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 100%;
-}
-
-form > div {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type="text"],
-textarea,
-select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-} */
-
-/*RADİO BUTTON !!!!!!!!!!!!!!!!!!!!!!!     */
-
-/* SİPARİŞ TOPLAMI BÖLÜMÜÜÜÜ*/
-/* .siparis-toplami {
-  margin-top: 20px;
-  width: 100%;
-  text-align: center;
-  width: 386px;
-  height: 255px;
-  gap: 0px;
-  padding: 5px 10px 10px 5px  ;
-  border-radius: 6px 0px 0px 0px;
-  opacity: 0px;
-  background-color: #FAF7F2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-
-}
-.siparis-toplami button {
-  background-color:#FDC913;
-  box-shadow: 0px 5px 10px;
-  width: 100%;
-  height: 62px;
-} */
-
-/* RESPONSİVE YAPALIM HAYDİİİ*/
-/* @media (min-width: 768px) {
-  .food-card {
-    padding: 40px;
-  }
-} 
-*/
