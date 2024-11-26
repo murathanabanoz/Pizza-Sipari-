@@ -23,12 +23,6 @@ export default function Header() {
               <Link to="/order" className="nav-link">
                 Sipariş Oluştur
               </Link>
-              <span> -</span>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/done">
-                Seçenekler
-              </Link>
             </li>
           </ul>
         </Nav>

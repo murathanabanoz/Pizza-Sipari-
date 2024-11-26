@@ -37,7 +37,6 @@ const Order = ({ setOrder }) => {
     "Sucuk",
     "Biber",
     "Kabak",
-    "Kanada Jambonu",
     "Domates",
     "Jalepeno",
   ];
@@ -55,13 +54,27 @@ const Order = ({ setOrder }) => {
 
   const handleToppingChange = (e) => {
     const value = e.target.value;
+
     setFormData((prevFormData) => {
-      const newToppings = prevFormData.toppings.includes(value)
-        ? prevFormData.toppings.filter((topping) => topping !== value)
-        : [...prevFormData.toppings, value];
+      const alreadySelected = prevFormData.toppings.includes(value);
+
+      if (alreadySelected) {
+        const newToppings = prevFormData.toppings.filter(
+          (topping) => topping !== value
+        );
+        return { ...prevFormData, toppings: newToppings };
+      }
+
+      if (prevFormData.toppings.length >= 8) {
+        alert("En fazla 8 malzeme seçebilirsiniz.");
+        return prevFormData;
+      }
+
+      const newToppings = [...prevFormData.toppings, value];
       return { ...prevFormData, toppings: newToppings };
     });
   };
+
   const totalToppingPrice = formData.toppings.length * 5;
   useEffect(() => {
     const newTotalPrice = (totalToppingPrice + 85.5) * count;
@@ -147,7 +160,9 @@ const Order = ({ setOrder }) => {
                   onChange={handleChange}
                   value={formData.dough}
                 >
-                  <option value="">-Hamur Kalınlığı Seç-</option>
+                  <option value="" disabled hidden>
+                    Hamur Kalınlığı Seç
+                  </option>
                   {doughs.map((dough, index) => (
                     <option key={index} value={dough}>
                       {dough}
@@ -159,7 +174,7 @@ const Order = ({ setOrder }) => {
           </div>
 
           <h3>Ek Malzemeler:</h3>
-          <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
+          <p>En Fazla 8 malzeme seçebilirsiniz. 5₺</p>
           <div className="checkbox-container">
             {toppingsOptions.map((topping) => (
               <label key={topping} className="checkbox-item">
@@ -175,12 +190,12 @@ const Order = ({ setOrder }) => {
             ))}
           </div>
           <div>
-            <p>Sipariş Notu</p>
+            <h3>Sipariş Notu:</h3>
             <label>
               <textarea
                 className="textarea"
                 name="note"
-                placeholder="Siparişe Eklemek istediğiniz bir not var mı?"
+                placeholder="Siparişe eklemek istediğiniz bir not var mı?"
                 value={formData.note}
                 onChange={handleChange}
               ></textarea>
@@ -188,21 +203,25 @@ const Order = ({ setOrder }) => {
           </div>
           <div className="bottom-container">
             <div className="buttons">
-              <button type="button" className="art-eksil" onClick={decrease}>
+              <button type="button" className="decrase-btn" onClick={decrease}>
                 -
               </button>
-              <span className="count">{count}</span>
-              <button type="button" className="art-eksil" onClick={increase}>
+              <button type="button" className="count">
+                {count}
+              </button>
+              <button type="button" className="incrase-btn" onClick={increase}>
                 +
               </button>
             </div>
             <div className="siparis-toplami">
-              <p>Sipariş Toplamı</p>
-              <p>
-                Seçimler: {formData.toppings.join(", ")}
-                {totalToppingPrice}
-              </p>
-              <p>Toplam: {total} TL</p>
+              <div className="siparisler">
+                <p>Sipariş Toplamı</p>
+                <p>
+                  Seçimler: {formData.toppings.join(", ")}
+                  {totalToppingPrice}
+                </p>
+                <p>Toplam: {total} TL</p>
+              </div>
               <button type="submit" className="siparis-button">
                 Sipariş Ver
               </button>

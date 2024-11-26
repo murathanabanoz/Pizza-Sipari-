@@ -33,21 +33,31 @@
   justify-content: space-between;
 }
 
-.art-eksil {
-  background-color: rgba(250, 247, 242, 1);
+.decrase-btn,
+.incrase-btn {
+  background-color: rgba(253, 201, 19, 1);
   border: none;
-  padding: 0.625rem;
   margin-top: 1.25rem;
+  padding: 17px 22px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.decrase-btn {
+  border-radius: 6px 0 0 6px;
+}
+.incrase-btn {
+  border-radius: 0 6px 6px 0;
 }
 .buttons {
   position: relative;
 }
-.art-eksil:hover {
-  cursor: pointer;
-}
 
 .count {
   background-color: rgba(250, 247, 242, 1);
+  margin-top: 1.25rem;
+  padding: 17px 22px;
+  border-radius: 7px;
+  border: none;
 }
 
 .bottom-container {
@@ -74,6 +84,7 @@
   flex-wrap: wrap;
   gap: 0.625rem;
   justify-content: space-between;
+  padding: 4px 0 15px;
 }
 
 .checkbox-item {
@@ -139,6 +150,7 @@
 
 .pizza-description {
   color: rgba(95, 95, 95, 1);
+  padding: 7px 0;
 }
 
 .pizza-name {
@@ -177,7 +189,7 @@ input[type="radio"] {
   border-radius: 50%;
   background-color: #f0f0f0;
   text-align: center;
-  line-height: 3.125rem;
+  line-height: 2rem;
   cursor: pointer;
 }
 
@@ -194,11 +206,15 @@ input[type="radio"] {
 
 .textarea {
   width: 100%;
+  height: 100px;
   box-sizing: border-box;
   resize: vertical;
   background-color: rgba(250, 247, 242, 1);
   padding: 0.625rem;
   border: none;
+  font-size: 1.1rem;
+  font-family: "Barlow";
+  /* letter-spacing: 1px; */
 }
 
 .siparis-toplami {
@@ -212,5 +228,10 @@ input[type="radio"] {
   border: none;
   height: 3rem;
   cursor: pointer;
-  margin-bottom: 0rem;
+}
+
+.siparisler {
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 6px;
+  text-align: left;
 }
