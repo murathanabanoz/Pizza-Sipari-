@@ -44,15 +44,13 @@
   margin-top: 0.8rem;
 }
 
-.group-2 h2,
-p {
-  cursor: pointer;
-}
 .group-2 h2:hover {
   color: rgb(162, 152, 152);
+  cursor: pointer;
 }
 .group-2 p:hover {
   color: rgb(162, 152, 152);
+  cursor: pointer;
 }
 .group-3 {
   width: 20rem;

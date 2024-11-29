@@ -220,7 +220,7 @@ input[type="radio"] {
 .siparis-toplami {
   width: 20rem;
   height: 1rem;
-  background-color: rgba(250, 247, 242, 1);
+  margin-top: 1.2rem;
 }
 .siparis-button {
   width: 100%;
@@ -234,4 +234,5 @@ input[type="radio"] {
   border: 1px solid rgba(217, 217, 217, 1);
   border-radius: 6px;
   text-align: left;
+  padding: 0 1rem;
 }
