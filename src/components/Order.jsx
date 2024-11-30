@@ -65,8 +65,8 @@ const Order = ({ setOrder }) => {
         return { ...prevFormData, toppings: newToppings };
       }
 
-      if (prevFormData.toppings.length >= 8) {
-        alert("En fazla 8 malzeme seçebilirsiniz.");
+      if (prevFormData.toppings.length >= 7) {
+        alert("En fazla 7 malzeme seçebilirsiniz.");
         return prevFormData;
       }
 
@@ -174,7 +174,7 @@ const Order = ({ setOrder }) => {
           </div>
 
           <h3>Ek Malzemeler:</h3>
-          <p>En Fazla 8 malzeme seçebilirsiniz. 5₺</p>
+          <p>En Fazla 7 malzeme seçebilirsiniz. 5₺</p>
           <div className="checkbox-container">
             {toppingsOptions.map((topping) => (
               <label key={topping} className="checkbox-item">
@@ -215,11 +215,8 @@ const Order = ({ setOrder }) => {
             </div>
             <div className="siparis-toplami">
               <div className="siparisler">
-                <p>Sipariş Toplamı</p>
-                <p>
-                  Seçimler: {formData.toppings.join(", ")}
-                  {totalToppingPrice}
-                </p>
+                <p>Sipariş Toplamı:</p>
+                <p>Seçimler: {formData.toppings.join(", ")}</p>
                 <p>Toplam: {total} TL</p>
               </div>
               <button type="submit" className="siparis-button">

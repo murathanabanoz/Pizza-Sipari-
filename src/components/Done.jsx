@@ -12,13 +12,13 @@ const Done = ({ order }) => {
       <h4 className="name">Position Absolute Acı Pizza</h4>
       <div className="siparis-bilgi">
         <h5>
-          Boyut:<span>{order.size}</span>
+          Boyut: <span> {order.size}</span>
         </h5>
         <h5>
           Hamur: <span>{order.dough}</span>
         </h5>
         <h5>
-          Ek Malzemeler:<span>{order.toppings.join(", ")}</span>
+          Ek Malzemeler: <span> {order.toppings.join(", ")}</span>
         </h5>
         <h5>{order.count} adet pizza</h5>
       </div>
